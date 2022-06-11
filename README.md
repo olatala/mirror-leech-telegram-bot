@@ -1,15 +1,12 @@
 # Heroku Deploy
 
 **Important Notes**
-1. This branch non-editable.
-2. Generate all your private files from master branch (token.pickle, config.env, drive_folder, cookies.txt ...) since the generators not available in heroku branch but you should add the private files in heroku branch not master or use variables links in `config.env`.
-3. You can only edit a2c.conf(aria2c) and qBittorrent.conf.
-4. Don't add variables in heroku Environment, you can only add `CONFIG_FILE_URL`.
-5. `BASE_URL_OF_BOT` variable is required to start the bot.
-6. Incase any extra file added other than the private files or any edit in dockerfile or edit file not mentioned in note `3` your bot will not start.
-7. Shell and Eval commands disabled in this branch.
-8. `UPSTREAM_REPO` and `UPSTREAM_BRANCH` not working in this branch.
-9. This branch uses megasdkrest and latest version of qBittorrent.
+1. Generate all your private files from master branch (token.pickle, config.env, drive_folder, cookies.txt, accounts, .netrc) since the generators not available in heroku branch but you should add the private files in heroku branch not in master or use variables links in `config.env`.
+2. Don't add variables in heroku Environment, you can only add `CONFIG_FILE_URL`.
+3. Don't deploy using hmanager or github integration.
+4. To avoid idling fill `BASE_URL_OF_BOT` or you can use [corn-job](http://cron-job.org) to ping your Heroku app.
+5. If you want to edit anything in code, so u should edit [h-code branch](https://github.com/anasty17/mirror-leech-telegram-bot/tree/h-code). After that u should add fill `UPSTREAM_REPO` of your fork and leave `UPSTREAM_BRANCH` empty since it's by default `h-code`.
+6. This branch use megasdkrest and latest version of qBittorrent.
 
 ------
 
